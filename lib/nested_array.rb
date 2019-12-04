@@ -31,13 +31,13 @@ end
 
 def matrix_lookup(matrix, row, column)
   # Return the matrix's content at row and column
-  value = matrix[row - 1][column - 1]
+  value = matrix[row][column]
   return value
 end
 
 def matrix_update(matrix, row, column, new_value)
   # Update the matrix location at row and column to have the value of new_value
   # Return the updated matrix
-  matrix[row - 1][column - 1] = new_value
+  matrix[row][column] = new_value
   matrix
 end
